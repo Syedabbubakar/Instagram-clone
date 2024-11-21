@@ -36,7 +36,7 @@ app.use((err, req, res, next) => {
 });
 console.log(process.env.MONGO_URI);
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI + process.env.MONGO_NAME)
+mongoose.connect("mongodb+srv://syed8040:VY8KMCxLE1CLbRli@cluster0.kgtp0.mongodb.net/instagramPosts")
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error(err));
 

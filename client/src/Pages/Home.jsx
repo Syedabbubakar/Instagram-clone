@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/posts")
+      .get("http://localhost:3000/posts")
       .then((response) => setPosts(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -15,7 +15,7 @@ const Home = () => {
   // Delete a post
   const deletePost = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/posts/${id}`);
+      await axios.delete(`http://localhost:3000/posts/${id}`);
       setPosts(posts.filter((post) => post._id !== id)); // Update state to remove deleted post
       alert("Post deleted successfully!");
     } catch (error) {
@@ -338,7 +338,7 @@ const Home = () => {
             ></i>
           </div>
           <div className="post">
-            <img src={`http://localhost:5000/${post.imagePath}`} alt="Post" />
+            <img src={`http://localhost:3000/${post.imagePath}`} alt="Post" />
           </div>
           <div className="icons">
             <i id="like" className="bi bi-heart fa-2x"></i>
