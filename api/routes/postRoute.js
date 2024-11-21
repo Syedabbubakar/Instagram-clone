@@ -1,35 +1,32 @@
 import express from 'express';
-import multer from 'multer';
 import Post from '../models/postModel.js';
 import { formatDistanceToNowStrict } from 'date-fns';
+import { upload } from '../utils/upload.js';
 
 const router = express.Router();
 
-// Multer configuration
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, 'uploads/');
-  },
-  filename: (req, file, cb) => {
-    cb(null, `${Date.now()}-${file.originalname}`);
-  },
-});
-const upload = multer({ storage });
 
 // Create a new post
 router.post('/', upload.single('image'), async (req, res) => {
   try {
-    console.log("Upload");
+    console.log('Upload successful');
     const { title, description } = req.body;
+
+    if (!req.file) {
+      return res.status(400).json({ error: 'Image upload failed' });
+    }
+
     const newPost = new Post({
       title,
       description,
-      imagePath: req.file.path,
+      imagePath: req.file.path, // Cloudinary URL
     });
+
     await newPost.save();
     res.status(201).json(newPost);
   } catch (error) {
-    res.status(500).json({ error: 'Error creating post' });
+    console.error('Error creating post:', error.message);
+    res.status(500).json({ error: error.message });
   }
 });
 
@@ -43,7 +40,7 @@ router.get('/', async (req, res) => {
     }))
     res.json(LatestPost);
   } catch (error) {
-    res.status(500).json({ error: 'Error fetching posts' });
+    res.status(500).json({ error: 'Error fetching posts' , error: error.message });
   }
 });
 

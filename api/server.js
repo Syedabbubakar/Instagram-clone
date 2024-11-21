@@ -13,27 +13,28 @@ const PORT = process.env.PORT || 3000;
 
 const _dirname = path.resolve()
 
+
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/uploads', express.static('uploads'));
+// app.use('/uploads', express.static('uploads'));
 app.use('/posts', postRoute);
 
-app.use(express.static(path.join(_dirname, '/client/dist')))
+// app.use(express.static(path.join(_dirname, '/client/dist')))
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(_dirname, 'client', 'dist', 'index.html'))
 })
 
-app.use((err, req, res, next) => {
-  const statusCode = err.statusCode || 500;
-  const message = err.message || "Internal Server Error";
-  return res.status(statusCode).json({
-    success: false,
-    statusCode,
-    message,
-  });
-});
+// app.use((err, req, res, next) => {
+//   const statusCode = err.statusCode || 500;
+//   const message = err.message || "Internal Server Error";
+//   return res.status(statusCode).json({
+//     success: false,
+//     statusCode,
+//     message,
+//   });
+// });
 console.log(process.env.MONGO_URI);
 // MongoDB connection
 mongoose.connect("mongodb+srv://syed8040:VY8KMCxLE1CLbRli@cluster0.kgtp0.mongodb.net/instagramPosts")

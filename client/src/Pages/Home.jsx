@@ -41,7 +41,7 @@ const Home = () => {
             ></i>
           </div>
           <div className="post">
-            <img src={`http://localhost:3000/${post.imagePath}`} alt="Post" />
+            <img src={post.imagePath} alt="Post" />
           </div>
           <div className="icons">
             <i id="like" className="bi bi-heart fa-2x"></i>
