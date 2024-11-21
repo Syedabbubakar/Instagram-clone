@@ -1,0 +1,597 @@
+/* body{
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    height:100vh;
+    width:100wh;
+    overflow:hidden;
+    font-family:"Oxygen";
+   }
+  .card{
+    height:680px;
+    width:400px;
+    background-color:white;
+    border-radius:10px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .profile{
+    height:70px;
+    width:100;
+    background-color:white;
+    border-radius:10px;
+  }
+  .profile img{
+    height:50px;
+    width:50px;
+    margin-left:5%;
+    margin-bottom:;
+    margin-top:3%;
+    border-radius:50%;
+    object-fit: cover;
+  }
+  .profile h4{
+    position:absolute;
+    font-size:16px;
+    font-weight:strong;
+    padding-left:80px;
+    padding-top:-5%;
+  
+  }
+  .profile i{
+    position:absolute;
+    font-weight:strong;
+    right:15px;
+    top:15px;
+          
+  
+  }
+  .profile h5{
+    position:absolute;
+    font-size:13px;
+    font-weight:strong;
+    color:gray;
+    padding-left:80px;
+    padding-top:5%;
+  }
+  .profile span{
+    position:absolute;
+     font-size:35px;
+    font-weight:strong;
+    top:0px;
+    left:200px;
+    
+  }
+  .profile h6{
+    position:absolute;
+    font-size:16px;
+    font-weight:900;
+    color:#0095f6;
+    left:220px;
+    top:-15px;
+    
+  }
+  .icons{
+    height:50px;
+    background-color:white;
+    
+  }
+  .icons i{
+    position:grid;
+    padding-left:10px;
+    height:100%;
+  }
+  .icons #save{
+    position:grid;
+    padding-left:205px;
+    height:100%;
+  }
+  
+  
+  .about-post{
+    margin-left:15px;
+    margin-top:-25px;
+    padding-right:5px;
+    
+  }
+  .about-post img{
+    top:0px;
+    border-radius:50%;
+   
+  }
+  .name_caption{
+    margin-top:-10px;
+  }
+  #caption{
+    font-size:14px;
+    color:darkblack;
+  }
+  .about-post h5{
+    font-size:13px;
+    color:gray;
+    top:-10px;
+    height:10px;
+  }
+  .about-post input{
+    width:90%;
+    border:0;
+    font-family:"Oxygen";
+    padding-left:10px;
+    margin-top:-10px;
+  }
+  .about-post input::placeholder{
+    padding-top:-10px;
+    font-size:14px;
+    font-weight:bold;
+    mergin-top:-10px;
+  }
+  .about-post h6{
+    margin-top:-14px;
+    color:gray;
+  } */
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+a{
+  color: black !important;
+}
+
+.brand-logo,h2{
+  font-family: 'Grand Hotel', cursive;
+}
+
+.mycard{
+  margin-top: 30px;
+}
+.auth-card{
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid rgb(8, 93, 252) !important;
+  box-shadow: 0 1px 0 0 rgb(8, 93, 252)  !important;
+}
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid rgb(8, 93, 252) !important;
+  box-shadow: 0 1px 0 0 rgb(8, 93, 252)  !important;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item{
+  width: 30%;
+}
+
+.home-card{
+  max-width: 500px;
+  height: max-content;
+  margin: 26px auto;
+  
+}
+.collection-item{
+  width: 100%;
+}
+
+
+#toast-container{
+  top:30px !important;
+  right: 20px !important;
+  left: auto !important;
+}
+
+
+.material-icons:hover{
+  cursor: pointer;
+} */
+
+/* body {
+
+  background-color:  #DC93C9 ;
+  font-family: "Roboto",sans-serif;
+}
+
+.feed {
+  width: 30%;
+  height: auto;
+  background-color: #FFFFFF;
+  margin: 80px auto;
+  padding-bottom: 10px;
+}
+
+.feed .username {
+  padding: 10px 30px 0px 30px;
+  display: flex;
+  flex-flow: row;
+}
+
+.feed .username .image, .feed .username .image img {
+  width:35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.feed .username a {
+  color: #000000;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.feed .username .id {
+  margin: 10px 15px;
+}
+
+.feed .post {
+  width: 100%;
+  height: 300px;
+  margin: 10px 0px;
+}
+
+.feed .post img {
+  width: 100%;
+  height: inherit;
+}
+
+.feed .btn-group {
+  padding: 0px 10px;
+}
+
+.feed .btn-group button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.feed .btn-group .btn-bookmark {
+  float: right;
+}
+
+.feed .caption {
+  font-size: 13px;
+  padding: 0px 20px;
+} 
+
+.feed .caption .like {font-weight: bold;}
+
+.feed .caption .id {
+  color: #000000;
+  text-decoration: none;
+}
+
+.feed .caption .time {
+  font-size: 10px;
+  color: #999;
+} */
+
+body{
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    /* height:100vh;
+    width:100wh; */
+    /* overflow:hidden; */
+    font-family:"Oxygen";
+   }
+
+  .navbar{
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:#333;
+    color:white;
+    padding:10px;
+    z-index:999;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .navbar div{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navImage{
+    width: 20%;
+    height: 100%;
+  }
+
+  .navbar a{
+    
+    margin: 0 30px;
+    font-size: 20px;
+  }
+  .navbar a:hover{
+    color:red;
+  }
+  .navbar a:focus{
+    color:red;
+  }
+
+  .navbar img{
+    margin:0 30px;
+    width: 100%;
+    height: 100%;
+  }
+  .card{
+    height:auto;
+    width:400px;
+    background-color:white;
+    border-radius:10px;
+    /* position: absolute; */
+    margin: auto;
+    margin-top: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+
+  .profile{
+    height:70px;
+    width:100;
+    background-color:white;
+    border-radius:10px;
+  }
+  .profile img{
+    height:50px;
+    width:50px;
+    margin-left:5%;
+    margin-bottom:;
+    margin-top:3%;
+    border-radius:50%;
+    object-fit: cover;
+  }
+  .profile h4{
+    position:absolute;
+    font-size:16px;
+    font-weight:strong;
+    padding-left:80px;
+    padding-top:-5%;
+  
+  }
+  .profile i{
+    position:absolute;
+    font-weight:strong;
+    right:15px;
+    top:15px;
+          
+  
+  }
+  .profile h5{
+    position:absolute;
+    font-size:13px;
+    font-weight:strong;
+    color:gray;
+    padding-left:80px;
+    padding-top:7%;
+  }
+  .profile span{
+    position:absolute;
+     font-size:35px;
+    font-weight:strong;
+    top:0px;
+    left:200px;
+    
+  }
+  .profile h6{
+    position:absolute;
+    font-size:16px;
+    font-weight:900;
+    color:#0095f6;
+    left:220px;
+    top:15px;
+    
+  }
+  .icons{
+    height:50px;
+    background-color:white;
+    
+  }
+  .icons i{
+    position:grid;
+    padding-left:10px;
+    height:100%;
+  }
+  .icons i:hover{
+    cursor: pointer;
+    color:red;
+  }
+  .icons a{
+    color:black;
+  }
+  .icons #edit{
+    position:grid;
+    padding-left:200px;
+    height:100%;
+  }
+  
+  
+  .about-post{
+    margin-left:15px;
+    margin-top:-25px;
+    padding-right:5px;
+    
+  }
+  .about-post img{
+    margin-top: 2px;
+    border-radius:50%;
+    height: 50%;
+   
+  }
+  .name_caption{
+    margin-top:10px;
+    margin-bottom: 5px;
+    font-size: 25px !important;
+  }
+  #caption{
+    font-size:20px;
+    color: rgb(90, 90, 90);
+  }
+  .about-post h5{
+    font-size:13px;
+    color:gray;
+    top:-10px;
+    height:10px;
+  }
+  .about-post input{
+    width:90%;
+    border:0;
+    font-family:"Oxygen";
+    padding-left:10px;
+    margin-top:-10px;
+  }
+  .about-post input::placeholder{
+    padding-top:-10px;
+    font-size:14px;
+    font-weight:bold;
+    margin-top:-10px;
+  }
+  .about-post h6{
+    font-size:15px;
+    margin-top:-14px;
+    padding-bottom: 10px;
+    color:gray;
+  }
+
+  .post img{
+    width:100%;
+    height: 400px;
+    /* height:auto; */
+    /* border-radius:10px; */
+    object-fit:cover;
+  }
+
+  .about-post h4{
+    font-size:18px;
+    
+  }
+
+  .createForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 91vh;
+  }
+
+  .createCard{
+    width: 50%;
+    background-color: white;
+    border-radius: 2%;
+    
+  }
+
+  .createCard div{
+    padding: 10px;
+  }
+
+  .cardInput{
+    padding:  10px !important;
+    margin-left: -10px !important;
+  }
+
+  /* General styling for file input container */
+.cardInput[type="file"] {
+  display: none; /* Hides the default file input */
+}
+
+/* Label acting as a custom file upload button */
+.cardInput[type="file"] + label {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.cardInput[type="file"] + label:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Active/Clicked state */
+.cardInput[type="file"] + label:active {
+  background-color: #003f7f;
+  border-color: #003f7f;
+}
+
+/* File name display (optional, if desired) */
+.file-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Container for the Submit button */
+.createForm .submitButtonContainer {
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  margin-top: 20px; /* Add spacing above the button */
+}
+
+/* Styling for the submit button */
+.createForm button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for the button */
+.createForm button[type="submit"]:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Active state for the button */
+.createForm button[type="submit"]:active {
+  background-color: #1e7e34;
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Disabled state (optional) */
+.createForm button[type="submit"]:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+  /* .file-field input[type=file] {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 150px;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 100;
+    color: #5a5a5a;
+  } */
