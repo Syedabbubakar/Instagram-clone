@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/posts")
+      .get("https://instagram-clone-tghv.onrender.com/posts")
       .then((response) => setPosts(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -15,7 +15,7 @@ const Home = () => {
   // Delete a post
   const deletePost = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/posts/${id}`);
+      await axios.delete(`https://instagram-clone-tghv.onrender.com/posts${id}`);
       setPosts(posts.filter((post) => post._id !== id)); // Update state to remove deleted post
       alert("Post deleted successfully!");
     } catch (error) {
