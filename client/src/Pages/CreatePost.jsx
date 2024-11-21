@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router";
 
 const CreatePost = () => {
+  const navigate = useNavigate();
+
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(null);
@@ -18,6 +21,7 @@ const CreatePost = () => {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Post created successfully!");
+      navigate('/');
     } catch (error) {
       console.error(error);
       alert("Failed to create post.");

@@ -12,6 +12,7 @@ const Home = () => {
       .catch((error) => console.error(error));
   }, []);
 
+  console.log(posts);
   // Delete a post
   const deletePost = async (id) => {
     try {
