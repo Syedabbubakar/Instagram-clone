@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import instaLogo from '../Assets/images/insta.png'
+import instaLogo from '../assets/insta.png'
 
 const Navbar = () => {
   return (
