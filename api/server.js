@@ -34,9 +34,9 @@ app.use((err, req, res, next) => {
     message,
   });
 });
-
+console.log(process.env.MONGO_URI);
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI + process.env.MONGO_NAME, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI + process.env.MONGO_NAME)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.error(err));
 
