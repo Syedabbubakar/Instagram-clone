@@ -15,7 +15,7 @@ const Home = () => {
   // Delete a post
   const deletePost = async (id) => {
     try {
-      await axios.delete(`https://instagram-clone-tghv.onrender.com/posts${id}`);
+      await axios.delete(`https://instagram-clone-tghv.onrender.com/posts/${id}`);
       setPosts(posts.filter((post) => post._id !== id)); // Update state to remove deleted post
       alert("Post deleted successfully!");
     } catch (error) {

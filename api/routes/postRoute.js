@@ -40,7 +40,7 @@ router.get('/', async (req, res) => {
     }))
     res.json(LatestPost);
   } catch (error) {
-    res.status(500).json({ error: 'Error fetching posts' , error: error.message });
+    res.status(500).json({ error: 'Error fetching posts' });
   }
 });
 
