@@ -14,7 +14,7 @@ const CreatePost = () => {
     formData.append("image", image);
 
     try {
-      await axios.post("http://localhost:3000/posts", formData, {
+      await axios.post("https://instagram-clone-tghv.onrender.com/posts", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Post created successfully!");

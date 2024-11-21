@@ -10,7 +10,7 @@ const EditPost = () => {
   const [image, setImage] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/posts/${id}`)
+    axios.get(`https://instagram-clone-tghv.onrender.com/posts/${id}`)
       .then(response => {
         setTitle(response.data.title);
         setDescription(response.data.description);
@@ -26,7 +26,7 @@ const EditPost = () => {
     if (image) formData.append('image', image);
 
     try {
-      await axios.put(`http://localhost:3000/posts/${id}`, formData, {
+      await axios.put(`https://instagram-clone-tghv.onrender.com/posts/${id}`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       alert('Post updated successfully!');
